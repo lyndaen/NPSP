@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>LevelEdit</label>
+        <name>LevelEdit</name>
+    </fieldSets>
+    <validationRules>
+        <errorMessage>O destino é um campo obrigatório no nível. Especifique o objeto de destino para este nível.</errorMessage>
+        <name>Target_Required</name>
+    </validationRules>
+    <layouts>
+        <layout>Level Layout</layout>
+        <sections>
+            <label>seção de texto longo</label>
+            <section>long text section</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do nível</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Nome do nível</label>
+    </standardFields>
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Nível</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Níveis</value>
+    </caseValues>
+    <fields>
+        <name>Active__c</name>
+        <help>Indica se este nível está atualmente em uso.</help>
+        <label>Ativo</label>
+    </fields>
+    <fields>
+        <name>Description__c</name>
+        <help>Descreve para que serve este nível ou o que significa alcançar este nível.</help>
+        <label>Descrição</label>
+    </fields>
+    <fields>
+        <name>Engagement_Plan_Template__c</name>
+        <help>O modelo do plano de interação a aplicar ao objeto de destino quando este nível for alcançado.</help>
+        <relationshipLabel>Níveis</relationshipLabel>
+        <label>Modelo de plano de interação</label>
+    </fields>
+    <fields>
+        <name>Level_Field__c</name>
+        <help>Indica qual campo usar no objeto de destino para armazenar o nível atual.</help>
+        <label>Campo de nível</label>
+    </fields>
+    <fields>
+        <name>Maximum_Amount__c</name>
+        <help>O valor máximo abaixo do qual o NPSP atribui este nível. Se este campo estiver vazio, o NPSP atribuirá este nível para qualquer valor maior ou igual ao valor mínimo deste nível.</help>
+        <label>Valor máximo (&lt;)</label>
+    </fields>
+    <fields>
+        <name>Minimum_Amount__c</name>
+        <help>O valor mínimo para o qual o NPSP atribui este nível. Se este campo estiver vazio, o NPSP atribuirá este nível para qualquer valor menor do que o valor máximo deste nível.</help>
+        <label>Valor mínimo (&gt;=)</label>
+    </fields>
+    <fields>
+        <name>Previous_Level_Field__c</name>
+        <help>Indica qual campo usar no objeto de destino para armazenar o nível anterior.</help>
+        <label>Campo de nível anterior</label>
+    </fields>
+    <fields>
+        <name>Source_Field__c</name>
+        <help>O campo do objeto de destino (nome do desenvolvedor) define o valor e o período de tempo no qual basear este Nível.</help>
+        <label>Campo de origem</label>
+    </fields>
+    <fields>
+        <name>Target__c</name>
+        <help>O objeto a que este nível se aplica.</help>
+        <label>Destino</label>
+        <picklistValues>
+            <masterLabel>Account</masterLabel>
+            <translation>Conta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact</masterLabel>
+            <translation>Contato</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

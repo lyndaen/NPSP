@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuração de entrada de dados em lote</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurações de entrada de dados em lote</value>
+    </caseValues>
+    <fields>
+        <name>Allow_Blank_Opportunity_Names__c</name>
+        <help>Se definido, a Entrada de dados em lote nunca nomeará Oportunidades, mesmo que estejam em branco (não incluídas na página BDE).</help>
+        <label>Permitir nomes de oport. em branco</label>
+    </fields>
+    <fields>
+        <name>Opportunity_Naming__c</name>
+        <help>Esta configuração gera automaticamente o nome de registro para registros de oportunidade inseridos em lote com base no valor dos campos inseridos.</help>
+        <label>Nomenclatura de oportunidade</label>
+    </fields>
+    <fields>
+        <name>Viewed_Retirement_Alert__c</name>
+        <label>Alerta de aposentadoria visualizado</label>
+    </fields>
+</CustomObjectTranslation>

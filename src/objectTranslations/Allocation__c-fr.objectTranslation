@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Gérer les affectations - Champs supplémentaires</label>
+        <name>ManageAllocationsAdditionalFields</name>
+    </fieldSets>
+    <webLinks>
+        <name>Manage_Allocations</name>
+        <label>Gérer des affectations</label>
+    </webLinks>
+    <layouts>
+        <layout>Allocation Layout</layout>
+        <sections>
+            <label>Liens personnalisés</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom des Affectations UCG</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Nom des Affectations UCG</label>
+    </standardFields>
+    <gender>Feminine</gender>
+    <startsWith>Vowel</startsWith>
+    <caseValues>
+        <plural>false</plural>
+        <value>Affectation UCG</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Affectations UCG</value>
+    </caseValues>
+    <fields>
+        <name>Amount__c</name>
+        <help>Montant de l’opportunité alloué à cette unité comptable générale. Laissez vide pour des affectations par pourcentages.</help>
+        <label>Montant</label>
+    </fields>
+    <fields>
+        <name>Campaign__c</name>
+        <help>La campagne associée à cette affectation. Utilisez ce champ si vous souhaitez que les nouvelles opportunités associées à cette campagne soient allouées de la même manière.</help>
+        <relationshipLabel>Affectations UCG</relationshipLabel>
+        <label>Campagne</label>
+    </fields>
+    <fields>
+        <name>General_Accounting_Unit__c</name>
+        <help>L’unité comptable générale à laquelle cette affectation est attribuée. Seules les unités comptables générales marquées comme actives seront disponibles pour les nouvelles affectations.</help>
+        <relationshipLabel>Affectations UCG</relationshipLabel>
+        <label>Unité comptable générale</label>
+    </fields>
+    <fields>
+        <name>Opportunity__c</name>
+        <help>L&apos;opportunité à laquelle vous souhaitez attribuer cette affectation. NPSP cumule toutes les opportunités dans une étape Clôturée/Gagnée dans l’unité comptable générale de cette affectation.</help>
+        <relationshipLabel>Affectations UCG</relationshipLabel>
+        <label>Opportunité</label>
+    </fields>
+    <fields>
+        <name>Payment__c</name>
+        <help>Attribue les affectations à un paiement.</help>
+        <relationshipLabel>Affectations de paiement</relationshipLabel>
+        <label>Paiement</label>
+    </fields>
+    <fields>
+        <name>Percent__c</name>
+        <help>Pourcentage du montant de l’opportunité alloué à l’unité comptable générale de cette affectation. Si vous modifiez ultérieurement le montant de l&apos;opportunité, NPSP mettra à jour le montant de l&apos;affectation dans l&apos;unité comptable générale.</help>
+        <label>Pourcentage</label>
+    </fields>
+    <fields>
+        <name>Recurring_Donation__c</name>
+        <help>Le don régulier auquel cette affectation est attribuée. NPSP alloue automatiquement toutes les nouvelles opportunités associées au don régulier de la même manière.</help>
+        <relationshipLabel>Affectations UCG</relationshipLabel>
+        <label>Don régulier</label>
+    </fields>
+</CustomObjectTranslation>

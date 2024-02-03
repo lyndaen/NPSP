@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuração de níveis</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurações de níveis</value>
+    </caseValues>
+    <fields>
+        <name>LastJobStartTimeAccount__c</name>
+        <label>Última hora de início do trab.: Conta</label>
+    </fields>
+    <fields>
+        <name>LastJobStartTimeContact__c</name>
+        <label>Última hora de início do trab.: Contato</label>
+    </fields>
+    <fields>
+        <name>Level_Assignment_Batch_Size__c</name>
+        <help>Número de registros por lote a serem processados no recálculo dos níveis.</help>
+        <label>Tamanho do lote de atribuição de nível</label>
+    </fields>
+</CustomObjectTranslation>

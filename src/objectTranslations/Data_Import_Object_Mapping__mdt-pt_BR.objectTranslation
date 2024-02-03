@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Data Import Object Mapping Layout</layout>
+        <sections>
+            <label>Detalhes do relacionamento entre objetos personalizados</label>
+            <section>Custom Object Relationship Details</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Mapeamento de objeto de importação de dados</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Mapeamentos de objetos de importação de dados</value>
+    </caseValues>
+    <fields>
+        <name>Custom_Mapping_Logic_Class__c</name>
+        <help>Se a lógica do Apex person. deve ser usada para mapear os campos para este objeto, o campo deve ser preenchido com o nome de uma classe (incl. namespace, se necessário) que estenda a classe BDI_ObjectMappingLogic e substitua o método populateObject.</help>
+        <label>Classe de lógica de map. person.</label>
+    </fields>
+    <fields>
+        <name>Data_Import_Object_Mapping_Set__c</name>
+        <help>O Grupo de objetos de importação de dados que contém este registro.</help>
+        <relationshipLabel>Mapeamentos de objeto imp. de dados</relationshipLabel>
+        <label>Conj. map. de objeto imp. de dados</label>
+    </fields>
+    <fields>
+        <name>Imported_Record_Field_Name__c</name>
+        <help>O nome de API de campo no objeto Importação de dados do NPSP onde o ID do registro importado será colocado quando a importação for bem-sucedida. É também aqui que o código verificará se esse registro foi importado ou correspondido.</help>
+        <label>Nome de campo de registro importado</label>
+    </fields>
+    <fields>
+        <name>Imported_Record_Status_Field_Name__c</name>
+        <help>O Nome da API de campo onde o sucesso ou a falha da importação será registrado para um registro de importação de dados do NPSP.</help>
+        <label>Nome de campo de status de reg. imp.</label>
+    </fields>
+    <fields>
+        <name>Is_Deleted__c</name>
+        <label>Foi excluído</label>
+    </fields>
+    <fields>
+        <name>Legacy_Data_Import_Object_Name__c</name>
+        <help>O nome do objeto de importação de dados herdado em que este grupo de objeto de importação de dados se baseia.</help>
+        <label>Nome do objeto de imp. de dados herdado</label>
+    </fields>
+    <fields>
+        <name>Object_API_Name__c</name>
+        <help>O nome de API do objeto de destino deste grupo de objetos.</help>
+        <label>Nome de API do objeto</label>
+    </fields>
+    <fields>
+        <name>Predecessor__c</name>
+        <help>O registro do grupo de objetos de importação de dados que precisa existir antes que esse registro possa ser criado (pai ou filho).</help>
+        <label>Antecessor</label>
+    </fields>
+    <fields>
+        <name>Relationship_Field__c</name>
+        <help>Se este grupo de objetos é filho do antecessor, este campo deve pesquisar no pai. Se for o pai do antecessor, este deve ser o campo de pesquisa no registro filho.</help>
+        <label>Campo de relacionamento</label>
+    </fields>
+    <fields>
+        <name>Relationship_To_Predecessor__c</name>
+        <help>Isso indica se este objeto é um pai ou filho do antecessor.</help>
+        <label>Relacionamento com antecessor</label>
+        <picklistValues>
+            <masterLabel>Parent</masterLabel>
+            <translation>Pai</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Child</masterLabel>
+            <translation>Filho</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Predecessor</masterLabel>
+            <translation>Sem antecessor</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

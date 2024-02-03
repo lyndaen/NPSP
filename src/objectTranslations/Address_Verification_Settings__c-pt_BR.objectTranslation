@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Configuração de verificação de endereço – OBSOLETA</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Configurações de verificação de endereço – OBSOLETAS</value>
+    </caseValues>
+    <fields>
+        <name>Address_Verification_Endpoint__c</name>
+        <help>URL usada para verificação de endereço.</help>
+        <label>Pto. de extr. verif. endereço-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Auth_ID__c</name>
+        <help>O ID de autenticação da sua chave de par secreto.</help>
+        <label>ID de autenticação-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Auth_Token__c</name>
+        <help>O token de autenticação da sua chave de par secreto.</help>
+        <label>Token de autenticação-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Auto_Update_Addresses__c</name>
+        <help>Se marcado, os endereços alterados são atualizados automaticamente com a resposta do serviço (quando há um resultado verificado).</help>
+        <label>End. de atualização automática-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Class__c</name>
+        <help>Classe do Salesforce responsável por entrar em contato com a API SmartyStreets e verificar endereços.</help>
+        <label>Classe-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Clear_Invalid_Addresses__c</name>
+        <help>Se marcado, qualquer endereço de conta dos EUA que o serviço marque como sem entrega será automaticamente apagado. (Você pode rever a entrada inválida no registro de endereço.)</help>
+        <label>Limpar endereços inválidos-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Enable_Automatic_Verification__c</name>
+        <help>Ativa a verificação automática de endereços para novos endereços.</help>
+        <label>Ativar verificação automática-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Reject_Ambiguous_Addresses__c</name>
+        <help>Marca endereços ambíguos como inválidos quando a API retorna mais de um endereço. Se não for marcado, a Salesforce aceitará o primeiro endereço sugerido como endereço válido.</help>
+        <label>Rejeitar endereços ambíguos-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Timeout__c</name>
+        <help>Tempo limite de callout em segundos</help>
+        <label>Tempo limite-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Using_SmartyStreets__c</name>
+        <help>Especifica se você está usando ou não o serviço de verificação de endereços SmartyStreets.</help>
+        <label>Usando SmartyStreets-OBSOLETO</label>
+    </fields>
+    <fields>
+        <name>Zipcode_Verification_Endpoint__c</name>
+        <help>URL usada para verificação de CEP.</help>
+        <label>Pto. de extr. verif. CEP-OBSOLETO</label>
+    </fields>
+</CustomObjectTranslation>

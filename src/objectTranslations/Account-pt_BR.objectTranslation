@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Entrada de BDE FS</label>
+        <name>BDE_Entry_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Lista de BDE FS</label>
+        <name>BDE_List_FS</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Gerenciar a personalização de família</label>
+        <name>Manage_Household_Custom</name>
+    </fieldSets>
+    <webLinks>
+        <name>Manage_Household</name>
+        <label>Gerenciar família</label>
+    </webLinks>
+    <webLinks>
+        <name>New_Gift</name>
+        <label>Nova doação</label>
+    </webLinks>
+    <webLinks>
+        <name>Recalculate_Rollups</name>
+        <label>Recalcular totalizações</label>
+    </webLinks>
+    <layouts>
+        <layout>Organization Layout</layout>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Endereço</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Descrição</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Doações totais</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Informações de associação</label>
+            <section>Membership Information</section>
+        </sections>
+        <sections>
+            <label>Informações de bolsa</label>
+            <section>Grantmaking Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre doação correspondente</label>
+            <section>Matching Gift Information</section>
+        </sections>
+        <sections>
+            <label>Comentários de doação corresp.</label>
+            <section>Matching Gift Comments</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Household Layout</layout>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Endereço</label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label>Descrição</label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Doações totais</label>
+            <section>Donation Totals</section>
+        </sections>
+        <sections>
+            <label>Informações de associação</label>
+            <section>Membership Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <fields>
+        <name>All_Members_Deceased__c</name>
+        <help>Se selecionado, todos os membros desta família faleceram. Não atualize este campo manualmente. Ele é atualizado automaticamente pelo NPSP por conta de atualizações na caixa de seleção Falecido em Contatos de membros da família.</help>
+        <label>Todos os membros da família falecidos</label>
+    </fields>
+    <fields>
+        <name>Batch__c</name>
+        <help>O lote em que a Conta foi criada.</help>
+        <relationshipLabel>Contas</relationshipLabel>
+        <label>Lote</label>
+    </fields>
+    <fields>
+        <name>CustomizableRollups_UseSkewMode__c</name>
+        <help>Quando marcadas, as Totalizações personalizáveis sempre usarão o &apos;Modo distorção&apos; a fim de totalizar créditos diretos e indiretos para este registro.</help>
+        <label>Totaliz. person.: modo Forçar distorção</label>
+    </fields>
+    <fields>
+        <name>Funding_Focus__c</name>
+        <help>As áreas gerais do programa que essa organização financia.</help>
+        <label>Foco do financiamento</label>
+        <picklistValues>
+            <masterLabel>Animal Welfare</masterLabel>
+            <translation>Bem-estar animal</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arts and Culture</masterLabel>
+            <translation>Artes e cultura</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Capacity Building</masterLabel>
+            <translation>Capacitação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation>Educação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Environmental</masterLabel>
+            <translation>Meio ambiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Services</masterLabel>
+            <translation>Serviços de saúde</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Human Services</masterLabel>
+            <translation>Serviços humanos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Grantmaker__c</name>
+        <help>Indica que essa organização é uma instituição de concessão de bolsas.</help>
+        <label>Concessora de bolsas</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Administrator_Name__c</name>
+        <help>O nome do administrador da doação correspondente da empresa.</help>
+        <label>Nome do adm. da doação corresp.</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Amount_Max__c</name>
+        <help>O valor máximo que a empresa pagará como correspondência de uma doação.</help>
+        <label>Valor máx. da doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Amount_Min__c</name>
+        <help>O valor mínimo que a empresa pagará como correspondência de uma doação.</help>
+        <label>Valor mín. da doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Annual_Employee_Max__c</name>
+        <help>O valor máximo que a empresa pagará como correspondência de um funcionário.</help>
+        <label>Máx doação corresp. funcionário anual</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Comments__c</name>
+        <help>Notas adicionais sobre o programa de Doação correspondente da empresa.</help>
+        <label>Comentários de doação corresp.</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Company__c</name>
+        <help>Indica que esta empresa oferece Doações correspondentes.</help>
+        <label>Empresa da doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Email__c</name>
+        <help>Email do administrador da doação correspondente da empresa.</help>
+        <label>Email de doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Info_Updated__c</name>
+        <help>A data em que você atualizou pela última vez as informações de doação correspondente.</help>
+        <label>Informações de doação corresp. atualiz.</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Percent__c</name>
+        <help>A parte de uma doação que a empresa vai corresponder.</help>
+        <label>Porcentagem de corresp. da doação</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Phone__c</name>
+        <help>O número de telefone do administrador da doação correspondente da empresa.</help>
+        <label>Telefone da doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Request_Deadline__c</name>
+        <help>Use este campo para anotar restrições de idade que a empresa tenha sobre a qualificação para doação correspondente.</help>
+        <label>Prazo de pedido de corresp. de doações</label>
+    </fields>
+    <fields>
+        <name>Membership_Span__c</name>
+        <help>O número de anos em que um membro desta Família foi associado (somente leitura).</help>
+        <label>Duração da associação</label>
+    </fields>
+    <fields>
+        <name>Membership_Status__c</name>
+        <help>Status de assoc. desta Família, (Atual, Expirado ou Período de carência). Valor baseado na data de término da assoc. e no período de carência. O período de carência padrão é definido em Config. do NPSP, em Config. da família. Este campo é somente leitura.</help>
+        <label>Status de associação</label>
+    </fields>
+    <fields>
+        <name>Number_of_Household_Members__c</name>
+        <help>O número de Contatos que são membros desta Família.</help>
+        <label>Número de membros da família</label>
+    </fields>
+    <fields>
+        <name>Sustainer__c</name>
+        <help>Indica se esta Conta é um doador ativo, vencido ou antigo recorrente. O valor é baseado no Status das Doações recorrentes relacionadas.</help>
+        <label>Sustentação</label>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Ativo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapsed</masterLabel>
+            <translation>Vencido</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former</masterLabel>
+            <translation>Anterior</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Undeliverable_Address__c</name>
+        <label>Endereço de faturamento sem entrega</label>
+    </fields>
+</CustomObjectTranslation>

@@ -809,7 +809,7 @@ flows:
             4:
                 task: update_dependencies
                 options:
-                    include_beta: True
+                    include_beta: False
                     security_type: PUSH
             5:
                 task: install_managed_beta

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Gerenciar FS do modelo de PI</label>
+        <name>ManageEPTemplateFS</name>
+    </fieldSets>
+    <webLinks>
+        <name>Manage_Template</name>
+        <label>Gerenciar modelo</label>
+    </webLinks>
+    <layouts>
+        <layout>Engagement Plan Template Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nome do modelo de plano de interação</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Nome do modelo de plano de interação</label>
+    </standardFields>
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Modelo do plano de engajamento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Modelos do plano de engajamento</value>
+    </caseValues>
+    <fields>
+        <name>Automatically_Update_Child_Task_Due_Date__c</name>
+        <help>Recalcula a data de vencimento de uma tarefa filho com base em quando a tarefa pai foi realmente concluída.</help>
+        <label>Atualizar autom. data venc. tarefa filho</label>
+    </fields>
+    <fields>
+        <name>Default_Assignee__c</name>
+        <help>Quando o campo Atribuído a da tarefa do plano de interação é deixado em branco, a quem a tarefa deve ser atribuída?</help>
+        <label>Atribuído padrão</label>
+        <picklistValues>
+            <masterLabel>Owner of Object for Engagement Plan</masterLabel>
+            <translation>Proprietário do objeto para o plano de interação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Creating Engagement Plan</masterLabel>
+            <translation>Plano de interação criado por usuário</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Description__c</name>
+        <label>Descrição</label>
+    </fields>
+    <fields>
+        <name>Reschedule_To__c</name>
+        <help>As tarefas com datas de vencimento em um dia de fim de semana devem ser agendadas para sexta-feira antes do fim de semana ou para a segunda-feira seguinte? Isso só se aplica se Ignorar fins de semana for selecionado.</help>
+        <label>Reagendar para</label>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation>Segunda-feira</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation>Sexta-feira</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Skip_Weekends__c</name>
+        <help>Se selecionado, as tarefas criadas neste plano de interação não terão datas de vencimento que caiam no sábado ou domingo.</help>
+        <label>Ignorar fins de semana</label>
+    </fields>
+    <fields>
+        <name>Total_Engagement_Plans__c</name>
+        <label>Total de planos de interação</label>
+    </fields>
+    <fields>
+        <name>Total_Tasks__c</name>
+        <label>Total de tarefas</label>
+    </fields>
+</CustomObjectTranslation>

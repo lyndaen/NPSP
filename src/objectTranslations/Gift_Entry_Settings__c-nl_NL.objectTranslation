@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Instellingen voor giftopgave</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Instellingen voor giftopgave</value>
+    </caseValues>
+    <fields>
+        <name>Default_Gift_Entry_Template__c</name>
+        <help>Dit is een voor Opgave van gift gebruikte startsjabloon voor het opgeven van enkelvoudige giften of batches van giften. Dit is de standaardsjabloon voor het opgeven van enkelvoudige giften.</help>
+        <label>Standaardsjabloon voor Opgave van gift</label>
+    </fields>
+    <fields>
+        <name>Enable_Gateway_Assignment__c</name>
+        <help>Schakelt verschillende Elevate-gateways in die worden gebruikt voor Elevate-batches van Opgave van gift. Indien dit niet is ingeschakeld, wordt altijd de standaardgateway gebruikt.</help>
+        <label>Gatewaytoewijzing inschakelen</label>
+    </fields>
+    <fields>
+        <name>Enable_Gift_Entry__c</name>
+        <help>Schakelt de tool Opgave van gift in. Deze voorziening vereist wat Geavanceerd toewijzen.</help>
+        <label>Opgave van gift inschakelen</label>
+    </fields>
+    <fields>
+        <name>Enable_Recurring_Donations_in_Gift_Entry__c</name>
+        <help>Geeft aan of terugkerende donaties beschikbaar zijn in Opgave van gift.</help>
+        <label>Terugk. donaties in Opg. van gift insch.</label>
+    </fields>
+</CustomObjectTranslation>

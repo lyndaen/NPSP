@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Entrada de BDE FS v2</label>
+        <name>BDE_Entry_FS_v2</name>
+    </fieldSets>
+    <fieldSets>
+        <label>Nova lista de BDE v2</label>
+        <name>BDE_List_FS_v2</name>
+    </fieldSets>
+    <webLinks>
+        <name>Email_Acknowledgment</name>
+        <label>Confirmação por email</label>
+    </webLinks>
+    <webLinks>
+        <name>Email_Acknowledgments</name>
+        <label>Confirmações por email</label>
+    </webLinks>
+    <webLinks>
+        <name>Find_Matched_Gifts</name>
+        <label>Encontrar doações correspondidas</label>
+    </webLinks>
+    <webLinks>
+        <name>Manage_Soft_Credits</name>
+        <label>Gerenciar créditos indiretos</label>
+    </webLinks>
+    <webLinks>
+        <name>Refresh_Name</name>
+        <label>Atualizar nome</label>
+    </webLinks>
+    <layouts>
+        <layout>Grant Layout</layout>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a bolsa</label>
+            <section>Grant Information</section>
+        </sections>
+        <sections>
+            <label>Informações de pagamento</label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>In-Kind Gift Layout</layout>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a espécie</label>
+            <section>In-Kind Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a homenagem</label>
+            <section>Tribute Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Donation Layout</layout>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Informações de pagamento</label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre doação correspondente</label>
+            <section>Matching Gift Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a homenagem</label>
+            <section>Tribute Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Major Gift Layout</layout>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Principais informações sobre a doação</label>
+            <section>Major Gift Information</section>
+        </sections>
+        <sections>
+            <label>Informações de pagamento</label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre doação correspondente</label>
+            <section>Matching Gift Information</section>
+        </sections>
+        <sections>
+            <label>Informações sobre a homenagem</label>
+            <section>Tribute Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Matching Gift Layout</layout>
+        <sections>
+            <label>Informações sobre a doação</label>
+            <section>Donation Information</section>
+        </sections>
+        <sections>
+            <label>Informações de pagamento</label>
+            <section>Payment Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Membership Layout</layout>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Informações sobre membro</label>
+            <section>Member Information</section>
+        </sections>
+        <sections>
+            <label>Informações de pagamento</label>
+            <section>Payment Information</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações do sistema</label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <fields>
+        <name>Acknowledgment_Date__c</name>
+        <help>A data em que você confirmou esta oportunidade.</help>
+        <label>Data de confirmação</label>
+    </fields>
+    <fields>
+        <name>Acknowledgment_Status__c</name>
+        <help>O status de confirmação desta Oportunidade.</help>
+        <label>Status de confirmação</label>
+        <picklistValues>
+            <masterLabel>To Be Acknowledged</masterLabel>
+            <translation>A ser confirmado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acknowledged</masterLabel>
+            <translation>Confirmado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Acknowledge</masterLabel>
+            <translation>Não confirmar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Acknowledgment Now</masterLabel>
+            <translation>Enviar confirmação agora</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email Acknowledgment Not Sent</masterLabel>
+            <translation>Confirmação por email não enviada</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Ask_Date__c</name>
+        <help>A data em que pediram esta Doação ao doador. Isso pode ser diferente da data em que você a recebeu.</help>
+        <label>Data do pedido</label>
+    </fields>
+    <fields>
+        <name>Batch_Number__c</name>
+        <help>O lote que criou a Oportunidade. Este campo é preenchido automaticamente com base nas Configurações de número de lote nas Configurações do NPSP.</help>
+        <label>Número de lote</label>
+    </fields>
+    <fields>
+        <name>Batch__c</name>
+        <relationshipLabel>Oportunidades</relationshipLabel>
+        <label>Lote</label>
+    </fields>
+    <fields>
+        <name>Closed_Lost_Reason__c</name>
+        <help>Notas sobre por que o pedido de doação não foi bem-sucedido.</help>
+        <label>Motivo de Fechado perdido</label>
+    </fields>
+    <fields>
+        <name>CommitmentId__c</name>
+        <help>Identificador externo para integração com os serviços de pagamento da Salesforce.org.</help>
+        <label>ID recorrente do Elevate</label>
+    </fields>
+    <fields>
+        <name>DisableContactRoleAutomation__c</name>
+        <help>Quando selecionado, este campo desativa vários aspectos da automação do papel de contato de oportunidade do NPSP, resultando em possível duplicação ou incorreção de dados. Consulte a documentação do produto para obter mais detalhes.</help>
+        <label>Desativar automação da função de contato</label>
+    </fields>
+    <fields>
+        <name>Fair_Market_Value__c</name>
+        <help>O Valor justo de mercado de uma doação em espécie.</help>
+        <label>Valor justo de mercado</label>
+    </fields>
+    <fields>
+        <name>Gift_Strategy__c</name>
+        <help>Categoriza o tipo de pedido desta Oportunidade, por exemplo, Novo doador.</help>
+        <label>Estratégia de doação</label>
+        <picklistValues>
+            <masterLabel>New Donor</masterLabel>
+            <translation>Novo doador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation>Renovação</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation>Upgrade</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Grant_Contract_Date__c</name>
+        <help>A data do início da bolsa, de acordo com o documento ou contrato enviado pela instituição de concessão da bolsa.</help>
+        <label>Data do contrato de bolsa</label>
+    </fields>
+    <fields>
+        <name>Grant_Contract_Number__c</name>
+        <help>Use-o para rastrear números exclusivos que às vezes são atribuídos por instituições de concessão de bolsas.</help>
+        <label>Número do contrato de bolsa</label>
+    </fields>
+    <fields>
+        <name>Grant_Period_End_Date__c</name>
+        <label>Data de término do período da bolsa</label>
+    </fields>
+    <fields>
+        <name>Grant_Period_Start_Date__c</name>
+        <label>Data de início do período da bolsa</label>
+    </fields>
+    <fields>
+        <name>Grant_Program_Area_s__c</name>
+        <help>Use-o para descrever as áreas de financiamento da Bolsa ou Doação. Por exemplo, os nomes dos programas para que servem a Bolsa ou Doação.</help>
+        <label>Áreas do programa</label>
+    </fields>
+    <fields>
+        <name>Grant_Requirements_Website__c</name>
+        <help>Uma URL que aponta para os requisitos da bolsa no site da instituição.</help>
+        <label>Site de requisitos da bolsa</label>
+    </fields>
+    <fields>
+        <name>Honoree_Contact__c</name>
+        <help>Pesquisa o registro de Contato do homenageado desta Doação.</help>
+        <relationshipLabel>Oportunidades (Contato do homenageado)</relationshipLabel>
+        <label>Contato do homenageado</label>
+    </fields>
+    <fields>
+        <name>Honoree_Information__c</name>
+        <help>Informações de contato, como email, endereço ou telefone que o doador forneceu para o homenageado.</help>
+        <label>Informações do homenageado</label>
+    </fields>
+    <fields>
+        <name>Honoree_Name__c</name>
+        <help>O nome do homenageado fornecido pelo doador. Se este campo for deixado em branco e o campo Contato do homenageado contiver um valor, o NPSP preencherá automaticamente o campo com esse valor.</help>
+        <label>Nome do homenageado</label>
+    </fields>
+    <fields>
+        <name>In_Kind_Description__c</name>
+        <help>Contém uma descrição em rich text da Doação em espécie, incluindo imagens.</help>
+        <label>Descrição em espécie</label>
+    </fields>
+    <fields>
+        <name>In_Kind_Donor_Declared_Value__c</name>
+        <help>Indica se o doador forneceu o Valor justo de mercado para esta Doação em espécie.</help>
+        <label>Valor declarado do doador em espécie</label>
+    </fields>
+    <fields>
+        <name>In_Kind_Type__c</name>
+        <help>O tipo de Doação em espécie, por exemplo, Bens ou Serviços.</help>
+        <label>Tipo Em espécie</label>
+        <picklistValues>
+            <masterLabel>Goods</masterLabel>
+            <translation>Artigos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation>Serviços</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Is_Grant_Renewal__c</name>
+        <help>Indica se a bolsa é uma renovação de uma bolsa anterior.</help>
+        <label>A bolsa é renovação</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Account__c</name>
+        <help>Procura o registro de Conta da empresa que vai doar o correspondente a esta Doação.</help>
+        <relationshipLabel>Doações correspondentes</relationshipLabel>
+        <label>Conta de Doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Employer__c</name>
+        <help>O nome da empresa que vai doar o correspondente a esta Doação.</help>
+        <label>Empregador da doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Matching_Gift_Status__c</name>
+        <help>O status da Doação correspondente a esta Doação, por exemplo, Enviado ou Recebido.</help>
+        <label>Status de doação correspondente</label>
+        <picklistValues>
+            <masterLabel>Potential</masterLabel>
+            <translation>Potencial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation>Enviado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation>Recebido</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Matching_Gift__c</name>
+        <help>Pesquisa o registro de Oportunidade da Doação correspondente a esta doação.</help>
+        <relationshipLabel>Doações correspondentes</relationshipLabel>
+        <label>Doação correspondente</label>
+    </fields>
+    <fields>
+        <name>Next_Grant_Deadline_Due_Date__c</name>
+        <help>A data de vencimento do próximo Objetivo desta Oportunidade (somente leitura).</help>
+        <label>Data do próximo objetivo</label>
+    </fields>
+    <fields>
+        <name>Notification_Message__c</name>
+        <help>Uma mensagem personalizada para o destinatário da notificação.</help>
+        <label>Mensagem de notificação</label>
+    </fields>
+    <fields>
+        <name>Notification_Preference__c</name>
+        <help>Indica como o destinatário da notificação deve ser notificado, por exemplo, por email ou telefone.</help>
+        <label>Preferência de notificação</label>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Mail</masterLabel>
+            <translation>Correio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>Telefone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Notify</masterLabel>
+            <translation>Não notificar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Notification_Recipient_Contact__c</name>
+        <help>Pesquisa o registro de Contato da pessoa a ser notificada sobre esta Doação.</help>
+        <relationshipLabel>Oportunidades (Destinatário de notificação)</relationshipLabel>
+        <label>Contato do destinatário da notificação</label>
+    </fields>
+    <fields>
+        <name>Notification_Recipient_Email__c</name>
+        <help>O endereço de email da pessoa que recebe a notificação da honra/memória.</help>
+        <label>Email do destinatário da notificação</label>
+    </fields>
+    <fields>
+        <name>Notification_Recipient_Information__c</name>
+        <help>Digite as informações de contato, como endereço, telefone ou email que o doador forneceu para o destinatário da notificação.</help>
+        <label>Info. do destinatário da notificação</label>
+    </fields>
+    <fields>
+        <name>Notification_Recipient_Name__c</name>
+        <help>O nome fornecido pelo doador para a pessoa que deve ser notificada sobre a Doação. Se este campo for deixado em branco e o campo Contato do destinatário da notificação contiver um valor, o NPSP preencherá automaticamente o campo com esse valor.</help>
+        <label>Nome do destinatário da notificação</label>
+    </fields>
+    <fields>
+        <name>Previous_Grant_Opportunity__c</name>
+        <help>Se a Bolsa é uma renovação de uma Bolsa anterior, use este campo para relacionar o registro com a Bolsa anterior.</help>
+        <relationshipLabel>Bolsas/Doações relacionadas</relationshipLabel>
+        <label>Oportunidade de bolsa/doação anterior</label>
+    </fields>
+    <fields>
+        <name>Primary_Contact_Campaign_Member_Status__c</name>
+        <help>Status que o NPSP usa ao criar um Membro de campanha para Contato primário e Fonte primária da campanha da Oportunidade. Deixar em branco força o padrão de status respondido para Oportunidades Fechadas/Ganhas e não respondido para outras Oportunidades.</help>
+        <label>Status membro da camp. do cont. primário</label>
+    </fields>
+    <fields>
+        <name>Primary_Contact__c</name>
+        <help>O contato primário para esta oportunidade. Se for uma Doação individual, o NPSP atribui a Doação ao Contato primário. Se for uma Doação organizacional, o NPSP atribui um crédito indireto ao Contato primário.</help>
+        <relationshipLabel>Oportunidades</relationshipLabel>
+        <label>Contato primário</label>
+    </fields>
+    <fields>
+        <name>Qualified_Date__c</name>
+        <help>A data em que sua organização identificou o doador como qualificado para esta Doação.</help>
+        <label>Data de qualificação</label>
+    </fields>
+    <fields>
+        <name>Recurring_Donation_Installment_Name__c</name>
+        <help>O nome do parcelamento para inclusão no nome da Oportunidade. Mostra o número da parcela entre parênteses para Doações recorrentes abertas ou o número da parcela no total para Doações recorrentes com um número definido de parcelas.</help>
+        <label>Nome da parcela de Doação recor.</label>
+    </fields>
+    <fields>
+        <name>Recurring_Donation_Installment_Number__c</name>
+        <help>O número da parcela da agenda da Doação recorrente desta Oportunidade.</help>
+        <label>Número da parcela de Doação recor.</label>
+    </fields>
+    <fields>
+        <name>Requested_Amount__c</name>
+        <help>O valor que você está solicitando. Esse número pode ser diferente do valor final da concessão.</help>
+        <label>Valor solicitado</label>
+    </fields>
+    <fields>
+        <name>Tribute_Notification_Date__c</name>
+        <label>Data de notificação da homenagem</label>
+    </fields>
+    <fields>
+        <name>Tribute_Notification_Status__c</name>
+        <label>Status de notificação da homenagem</label>
+        <picklistValues>
+            <masterLabel>To Be Notified</masterLabel>
+            <translation>A ser notificado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Notified</masterLabel>
+            <translation>Notificado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Tribute_Type__c</name>
+        <help>Indica se a doação é em honra ou em memória de uma pessoa.</help>
+        <label>Tipo de homenagem</label>
+        <picklistValues>
+            <masterLabel>Honor</masterLabel>
+            <translation>Honra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Memorial</masterLabel>
+            <translation>Memória</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

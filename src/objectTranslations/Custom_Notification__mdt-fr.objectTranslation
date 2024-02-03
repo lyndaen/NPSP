@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <startsWith>Consonant</startsWith>
+    <caseValues>
+        <plural>false</plural>
+        <value>Notification personnalisée</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Notifications personnalisées</value>
+    </caseValues>
+    <fields>
+        <name>Audience_Implementation__c</name>
+        <label>Implémentation d’audience</label>
+    </fields>
+    <fields>
+        <name>IsActive__c</name>
+        <label>IsActive</label>
+    </fields>
+    <fields>
+        <name>Notification_Channel__c</name>
+        <label>Canal de notification</label>
+    </fields>
+    <fields>
+        <name>Notification_Content_Implementation__c</name>
+        <label>Implémentation contenu de notification</label>
+    </fields>
+    <fields>
+        <name>Redirect_URL__c</name>
+        <label>URL de redirection</label>
+    </fields>
+</CustomObjectTranslation>

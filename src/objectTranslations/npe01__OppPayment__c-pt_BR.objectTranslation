@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label>Assistente de pagamento FS</label>
+        <name>Payment_WizardFS</name>
+    </fieldSets>
+    <fields>
+        <name>ACH_Code__c</name>
+        <help>O código SEC (Standard Entry Class, classe de entrada padrão) usado para esta transação da ACH.</help>
+        <label>Código ACH</label>
+    </fields>
+    <fields>
+        <name>ACH_Last_4__c</name>
+        <help>Os últimos quatro dígitos da conta bancária usada para esta transação.</help>
+        <label>ACH Últimos 4</label>
+    </fields>
+    <fields>
+        <name>Authorized_Date__c</name>
+        <help>Data e hora em que a transação foi autorizada.</help>
+        <label>Data de autorização</label>
+    </fields>
+    <fields>
+        <name>Authorized_UTC_Timestamp__c</name>
+        <help>A data e a hora exatas (até o milissegundo) do gateway de pagamento no qual essa transação foi autorizada com sucesso.</help>
+        <label>Datahora UTC de autorização</label>
+    </fields>
+    <fields>
+        <name>Batch_Number__c</name>
+        <help>O lote que definiu este Pagamento como realizado. Este campo é preenchido automaticamente com base nas Configurações de número de lote nas Configurações do NPSP.</help>
+        <label>Número de lote</label>
+    </fields>
+    <fields>
+        <name>Card_Expiration_Month__c</name>
+        <help>O mês de vencimento do cartão utilizado nesta transação.</help>
+        <label>Mês de vencimento do cartão</label>
+    </fields>
+    <fields>
+        <name>Card_Expiration_Year__c</name>
+        <help>O ano de vencimento do cartão utilizado nesta transação.</help>
+        <label>Ano de vencimento do cartão</label>
+    </fields>
+    <fields>
+        <name>Card_Last_4__c</name>
+        <help>Os últimos quatro dígitos do cartão usado para esta transação.</help>
+        <label>Últimos 4 dígitos</label>
+    </fields>
+    <fields>
+        <name>Card_Network__c</name>
+        <help>A operadora do cartão usado para esta transação.</help>
+        <label>Operadora de cartões</label>
+    </fields>
+    <fields>
+        <name>DebitType__c</name>
+        <label>Tipo de débito</label>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation>Reembolso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Refund</masterLabel>
+            <translation>Reembolso parcial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chargeback</masterLabel>
+            <translation>Estorno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Donor_Cover_Amount__c</name>
+        <help>O valor que o doador pagou além do valor da doação, muitas vezes para ajudar a cobrir as taxas de transação ou para adicionar uma gorjeta à doação.</help>
+        <label>Valor da cobertura do doador</label>
+    </fields>
+    <fields>
+        <name>Elevate_Original_Payment_ID__c</name>
+        <help>Somente para reembolsos. Mostra o ID da transação de pagamento original do Elevate.</help>
+        <label>ID de pgmt. original do Elevate</label>
+    </fields>
+    <fields>
+        <name>Elevate_Payment_API_Declined_Reason__c</name>
+        <help>Fornece detalhes sobre por que uma transação foi recusada.</help>
+        <label>API de pgmt. Elevate Motivo da recusa</label>
+    </fields>
+    <fields>
+        <name>Elevate_Payment_API_Status__c</name>
+        <help>O valor de status da API para este registro de Pagamento conectado ao Elevate.</help>
+        <label>Status da API de pgmt. do Elevate</label>
+    </fields>
+    <fields>
+        <name>Elevate_Payment_Created_Date__c</name>
+        <help>Data e hora em que a transação foi criada.</help>
+        <label>Data de criação do pgmt. do Elevate</label>
+    </fields>
+    <fields>
+        <name>Elevate_Payment_Created_UTC_Timestamp__c</name>
+        <help>A data e a hora exatas (até o milissegundo) do Elevate em que a transação foi criada.</help>
+        <label>Datahora UTC de criação de pgmt. Elevate</label>
+    </fields>
+    <fields>
+        <name>Elevate_Payment_ID__c</name>
+        <help>O ID exclusivo para esta transação do Elevate.</help>
+        <label>ID de pagamento do Elevate</label>
+    </fields>
+    <fields>
+        <name>Elevate_Transaction_Fee__c</name>
+        <help>A taxa de transação cobrada pelo Elevate.</help>
+        <label>Taxa de transação do Elevate</label>
+    </fields>
+    <fields>
+        <name>Gateway_ID__c</name>
+        <help>O ID do gateway de pagamento que processou a transação.</help>
+        <label>ID do gateway</label>
+    </fields>
+    <fields>
+        <name>Gateway_Payment_ID__c</name>
+        <help>O ID exclusivo para esta transação do gateway de pagamento.</help>
+        <label>ID de pgmt. do gateway</label>
+    </fields>
+    <fields>
+        <name>Gateway_Transaction_Fee__c</name>
+        <help>A taxa de transação cobrada pelo seu gateway de pagamento.</help>
+        <label>Taxa de transação do gateway</label>
+    </fields>
+    <fields>
+        <name>OriginalPayment__c</name>
+        <help>A transação de pagamento original associada a este registro.</help>
+        <relationshipLabel>Reembolsos</relationshipLabel>
+        <label>Pagamento original</label>
+    </fields>
+    <fields>
+        <name>Origin_ID__c</name>
+        <help>O ID do sistema em que a transação foi iniciada.</help>
+        <label>ID de origem</label>
+    </fields>
+    <fields>
+        <name>Origin_Name__c</name>
+        <help>O nome do sistema em que a transação foi iniciada.</help>
+        <label>Nome de origem</label>
+    </fields>
+    <fields>
+        <name>Origin_Type__c</name>
+        <help>O tipo de sistema usado para iniciar a transação. Os valores disponíveis incluem Hub de interações, Página de doações, API de pagamentos, Salesforce.</help>
+        <label>Tipo de origem</label>
+    </fields>
+    <fields>
+        <name>Payment_Acknowledged_Date__c</name>
+        <help>Data de confirmação</help>
+        <label>Data de confirmação do pagamento</label>
+    </fields>
+    <fields>
+        <name>Payment_Acknowledgment_Status__c</name>
+        <help>Status de confirmação deste pagamento.</help>
+        <label>Status de confirmação do pagamento</label>
+        <picklistValues>
+            <masterLabel>To Be Acknowledged</masterLabel>
+            <translation>A ser confirmado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acknowledged</masterLabel>
+            <translation>Confirmado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Acknowledge</masterLabel>
+            <translation>Não confirmar</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Total_Transaction_Fees__c</name>
+        <help>A soma das taxas de transação cobradas pelo Elevate e pelo gateway de pagamento.</help>
+        <label>Taxas totais de transação</label>
+    </fields>
+    <fields>
+        <name>Type__c</name>
+        <help>Indica o tipo de transação.</help>
+        <label>Tipo</label>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Recurring Donation Change Log Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Número de logs de alterações de DR</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Número de logs de alterações de DR</label>
+    </standardFields>
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Registro de alterações a doação recorrente</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registros de alterações a doações recorrentes</value>
+    </caseValues>
+    <fields>
+        <name>ChangeType__c</name>
+        <help>O tipo de alteração (Upgrade, Downgrade, etc.) que este registro de Log de alterações representa.</help>
+        <label>Tipo de alteração</label>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation>Upgrade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation>Downgrade</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>EffectiveDate__c</name>
+        <help>A Data de vigência da doação recorrente quando essa mudança ocorreu.</help>
+        <label>Data de vigência</label>
+    </fields>
+    <fields>
+        <name>NewAmount__c</name>
+        <help>O novo valor para a Doação recorrente relacionada.</help>
+        <label>Novo valor</label>
+    </fields>
+    <fields>
+        <name>NewAnnualValue__c</name>
+        <help>O novo valor anual para esta doação recorrente, com base no valor e na agenda.</help>
+        <label>Novo valor anual</label>
+    </fields>
+    <fields>
+        <name>NewCampaign__c</name>
+        <help>A nova campanha para a doação recorrente relacionada.</help>
+        <relationshipLabel>Log de alterações de doação recorrente (nova campanha)</relationshipLabel>
+        <label>Nova campanha</label>
+    </fields>
+    <fields>
+        <name>NewExpectedTotalValue__c</name>
+        <help>O novo valor total estimado para esta doação recorrente fixa, com base no valor e na agenda.</help>
+        <label>Novo valor total esperado</label>
+    </fields>
+    <fields>
+        <name>NewInstallmentFrequency__c</name>
+        <help>A nova frequência de parcelamento para a doação recorrente relacionada.</help>
+        <label>Nova frequência de parcelamento</label>
+    </fields>
+    <fields>
+        <name>NewInstallmentPeriod__c</name>
+        <help>O novo período de parcelamento para a doação recorrente relacionada.</help>
+        <label>Novo período de parcelamento</label>
+    </fields>
+    <fields>
+        <name>NewPaymentMethod__c</name>
+        <help>O novo método de pagamento para a doação recorrente relacionada.</help>
+        <label>Novo método de pagamento</label>
+    </fields>
+    <fields>
+        <name>NewPlannedInstallments__c</name>
+        <help>O novo número de parcelas (doações) que você espera receber. Somente para doações recorrentes de prazo fixo.</help>
+        <label>Novo número de parcelas planejadas</label>
+    </fields>
+    <fields>
+        <name>NewRecurringType__c</name>
+        <help>O novo tipo de recorrência para a doação recorrente relacionada.</help>
+        <label>Novo tipo de recorrência</label>
+    </fields>
+    <fields>
+        <name>NewStatusReason__c</name>
+        <help>O motivo do novo status para a doação recorrente relacionada.</help>
+        <label>Motivo do novo status</label>
+    </fields>
+    <fields>
+        <name>NewStatus__c</name>
+        <help>O novo status para a doação recorrente relacionada.</help>
+        <label>Novo status</label>
+    </fields>
+    <fields>
+        <name>PreviousAmount__c</name>
+        <help>O Valor anterior da doação recorrente relacionada.</help>
+        <label>Valor anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousAnnualValue__c</name>
+        <help>O valor anual anterior para esta doação recorrente, com base no valor e na agenda</help>
+        <label>Valor anual anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousCampaign__c</name>
+        <help>A campanha anterior da doação recorrente relacionada.</help>
+        <relationshipLabel>Log de alterações de doação recorrente (campanha anterior)</relationshipLabel>
+        <label>Campanha anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousExpectedTotalValue__c</name>
+        <help>O valor total esperado anterior para esta doação recorrente fixa, com base no valor e na agenda.</help>
+        <label>Valor total esperado anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousInstallmentFrequency__c</name>
+        <help>A frequência de parcelamento anterior para a doação recorrente relacionada.</help>
+        <label>Frequência de parcelamento anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousInstallmentPeriod__c</name>
+        <help>O período de parcelamento anterior para a doação recorrente relacionada.</help>
+        <label>Período de parcelamento anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousPaymentMethod__c</name>
+        <help>O método de pagamento anterior da doação recorrente relacionada.</help>
+        <label>Método de pagamento anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousPlannedInstallments__c</name>
+        <help>O número anterior de parcelas (doações) que você espera receber. Somente para doações recorrentes de prazo fixo.</help>
+        <label>Número anterior de parcelas planejadas</label>
+    </fields>
+    <fields>
+        <name>PreviousRecurringType__c</name>
+        <help>O tipo de recorrência anterior para a doação recorrente relacionada.</help>
+        <label>Tipo de recorrência anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousStatusReason__c</name>
+        <help>O motivo do status anterior para a doação recorrente relacionada.</help>
+        <label>Motivo do status anterior</label>
+    </fields>
+    <fields>
+        <name>PreviousStatus__c</name>
+        <help>O Status anterior da doação recorrente relacionada.</help>
+        <label>Status anterior</label>
+    </fields>
+    <fields>
+        <name>RecurringDonation__c</name>
+        <help>A Doação Recorrente relacionada a este registro de log de alterações.</help>
+        <relationshipLabel>Log de alterações de DR</relationshipLabel>
+        <label>Doação recorrente</label>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>GS Checklist Item Layout</layout>
+        <sections>
+            <label>Informações</label>
+            <section>Info</section>
+        </sections>
+        <sections>
+            <label>Link</label>
+            <section>Link</section>
+        </sections>
+        <sections>
+            <label>Botões</label>
+            <section>Buttons</section>
+        </sections>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Item da lista de verificação da Introdução ao NPSP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Itens da lista de verificação da Introdução ao NPSP</value>
+    </caseValues>
+    <fields>
+        <name>Description_Label__c</name>
+        <help>O nome da API do rótulo Descrição deste item na página Introdução. Deve corresponder a um rótulo importado no gsLabelMapper LWC.</help>
+        <label>Nome do rótulo da descrição</label>
+    </fields>
+    <fields>
+        <name>Extra_Info_Label__c</name>
+        <help>O nome da API do Rótulo de informações extras, que fornece informações extras sobre um item da seção (como duração do vídeo, PDF, etc). Mostrado no canto superior direito.</help>
+        <label>Nome do rótulo de informações extras</label>
+    </fields>
+    <fields>
+        <name>GS_Checklist_Section__c</name>
+        <help>A seção na página Introdução da qual este item faz parte.</help>
+        <relationshipLabel>Itens Lista de verificação da Introdução</relationshipLabel>
+        <label>Seção Lista de verificação da Introdução</label>
+    </fields>
+    <fields>
+        <name>Has_Link__c</name>
+        <help>Indica se o item tem um link para exibir.</help>
+        <label>Possui link</label>
+    </fields>
+    <fields>
+        <name>Image__c</name>
+        <help>O nome do arquivo da imagem no Recurso Estático CumulusResources (na pasta gsAssets/step) para renderizar.</help>
+        <label>Imagem</label>
+    </fields>
+    <fields>
+        <name>Link_Label__c</name>
+        <help>O nome da API do rótulo Link de um link na página Introdução. Deve corresponder a um rótulo importado no gsLabelMapper LWC.</help>
+        <label>Nome do rótulo do link</label>
+    </fields>
+    <fields>
+        <name>Link_URL__c</name>
+        <help>A URL de destino de um link na página Introdução.</help>
+        <label>URL do link</label>
+    </fields>
+    <fields>
+        <name>Position__c</name>
+        <help>A posição deste item de seção na página Introdução.</help>
+        <label>Posição</label>
+    </fields>
+    <fields>
+        <name>Primary_Button_Label__c</name>
+        <help>O nome da API do rótulo Botão primário em um item da seção na página Introdução. Deve corresponder a um rótulo importado no gsLabelMapper LWC.</help>
+        <label>Nome do rótulo do botão primário</label>
+    </fields>
+    <fields>
+        <name>Primary_Button_Type__c</name>
+        <help>O tipo de ação relacionada ao Botão Primário. Indica se o botão está desativado, abre uma nova guia do Salesforce ou abre uma página externa.</help>
+        <label>Tipo de botão primário</label>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation>Desabilitado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC New Tab</masterLabel>
+            <translation>Nova guia SFDC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Page</masterLabel>
+            <translation>Página externa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Primary_Button_Value__c</name>
+        <help>Ação do Botão Primário.
+Para um botão Página externa, a URL externa.
+Para um botão Nova guia SFDC, o formato é &quot;{pageReference}:{objectOrPageApiName}:{action}&quot;. Consulte a Doc. do Lightning NavigationMixin para ver exemplos e todas as especificações.</help>
+        <label>Valor do botão primário</label>
+    </fields>
+    <fields>
+        <name>Secondary_Button_Label__c</name>
+        <help>O nome da API do rótulo Botão secundário em um item da seção na página Introdução. Deve corresponder a um rótulo importado no gsLabelMapper LWC.</help>
+        <label>Nome do rótulo do botão secundário</label>
+    </fields>
+    <fields>
+        <name>Secondary_Button_Type__c</name>
+        <help>O tipo de ação relacionada ao Botão secundário. Indica se o botão está desativado, abre uma nova guia do Salesforce ou abre uma página externa</help>
+        <label>Tipo de botão secundário</label>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation>Desabilitado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SFDC New Tab</masterLabel>
+            <translation>Nova guia SFDC</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Page</masterLabel>
+            <translation>Página externa</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Secondary_Button_Value__c</name>
+        <help>Ação do Botão secundário.
+Para um botão Página externa, a URL externa.
+Para um botão Nova guia SFDC, o formato é &quot;{pageReference}:{objectOrPageApiName}:{action}&quot;. Consulte a Doc. do Lightning NavigationMixin para ver exemplos e todas as especificações.</help>
+        <label>Valor do botão secundário</label>
+    </fields>
+    <fields>
+        <name>Title_Label__c</name>
+        <help>O nome da API do rótulo Título deste item da seção na página Introdução. Deve corresponder a um rótulo importado no gsLabelMapper LWC.</help>
+        <label>Nome do rótulo do título</label>
+    </fields>
+</CustomObjectTranslation>

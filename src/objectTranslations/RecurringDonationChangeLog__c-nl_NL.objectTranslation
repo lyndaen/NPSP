@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Recurring Donation Change Log Layout</layout>
+        <sections>
+            <label>Aangepaste koppelingen</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Aantal wijzigingslogboeken voor terugkerende donatie</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Aantal wijzigingslogboeken voor terugkerende donatie</label>
+    </standardFields>
+    <gender>Neuter</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Wijzigingslogboek voor terugkerende donaties</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Wijzigingslogboeken voor terugkerende donaties</value>
+    </caseValues>
+    <fields>
+        <name>ChangeType__c</name>
+        <help>Het wijzigingstype (upgrade, downgrade, etc.) die door dit wijzigingsrecord wordt vertegenwoordigd.</help>
+        <label>Wijzigingstype</label>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation>Upgraden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Downgrade</masterLabel>
+            <translation>Downgrade uitvoeren</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>EffectiveDate__c</name>
+        <help>De ingangsdatum van de terugkerende donatie, toen deze wijziging plaatsvond.</help>
+        <label>Ingangsdatum</label>
+    </fields>
+    <fields>
+        <name>NewAmount__c</name>
+        <help>Het nieuwe bedrag voor de desbetreffende terugkerende donatie.</help>
+        <label>Nieuw bedrag</label>
+    </fields>
+    <fields>
+        <name>NewAnnualValue__c</name>
+        <help>De nieuwe jaarlijkse waarde voor deze terugkerende donatie, op basis van het bedrag en de planning.</help>
+        <label>Nieuwe jaarlijkse waarde</label>
+    </fields>
+    <fields>
+        <name>NewCampaign__c</name>
+        <help>De nieuwe campagne voor de desbetreffende terugkerende donatie.</help>
+        <relationshipLabel>Wijzigingslogboek voor terugkerende donatie (nieuwe campagne)</relationshipLabel>
+        <label>Nieuwe campagne</label>
+    </fields>
+    <fields>
+        <name>NewExpectedTotalValue__c</name>
+        <help>De nieuwe verwachte totale waarde voor deze vaste terugkerende donatie, op basis van het bedrag en de planning.</help>
+        <label>Nieuwe verwachte totale waarde</label>
+    </fields>
+    <fields>
+        <name>NewInstallmentFrequency__c</name>
+        <help>De nieuwe frequentie van termijnen voor deze desbetreffende terugkerende donatie.</help>
+        <label>Nieuwe frequentie van termijnen</label>
+    </fields>
+    <fields>
+        <name>NewInstallmentPeriod__c</name>
+        <help>De nieuwe termijnperiode voor de desbetreffende terugkerende donatie.</help>
+        <label>Nieuwe termijnperiode</label>
+    </fields>
+    <fields>
+        <name>NewPaymentMethod__c</name>
+        <help>De nieuwe betalingswijze voor de desbetreffende terugkerende donatie.</help>
+        <label>Nieuwe betalingswijze</label>
+    </fields>
+    <fields>
+        <name>NewPlannedInstallments__c</name>
+        <help>Het nieuwe aantal geplande termijnen (donaties) dat u verwacht te ontvangen. Alleen voor terugkerende donaties met een vaste duur.</help>
+        <label>Het aantal geplande termijnen</label>
+    </fields>
+    <fields>
+        <name>NewRecurringType__c</name>
+        <help>Het nieuwe type terugkeer voor de desbetreffende terugkerende donatie.</help>
+        <label>Nieuw type terugkeer</label>
+    </fields>
+    <fields>
+        <name>NewStatusReason__c</name>
+        <help>De nieuwe statusreden voor de desbetreffende terugkerende donatie.</help>
+        <label>Statusreden</label>
+    </fields>
+    <fields>
+        <name>NewStatus__c</name>
+        <help>De nieuwe status voor de desbetreffende terugkerende donatie.</help>
+        <label>Nieuwe status</label>
+    </fields>
+    <fields>
+        <name>PreviousAmount__c</name>
+        <help>Het vorige bedrag voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorig bedrag</label>
+    </fields>
+    <fields>
+        <name>PreviousAnnualValue__c</name>
+        <help>De vorige jaarlijkse waarde voor deze terugkerende donatie, op basis van het bedrag en de planning</help>
+        <label>Vorige jaarlijkse waarde</label>
+    </fields>
+    <fields>
+        <name>PreviousCampaign__c</name>
+        <help>De vorige campagne voor de desbetreffende terugkerende donatie.</help>
+        <relationshipLabel>Wijzigingslogboek van terugkerende donatie (vorige campagne)</relationshipLabel>
+        <label>Vorige campagne</label>
+    </fields>
+    <fields>
+        <name>PreviousExpectedTotalValue__c</name>
+        <help>De vorige verwachte totale waarde voor deze vaste terugkerende donatie, op basis van het bedrag en de planning.</help>
+        <label>Vorige verwachte totale waarde</label>
+    </fields>
+    <fields>
+        <name>PreviousInstallmentFrequency__c</name>
+        <help>De vorige frequentie van termijnen voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorige frequentie van termijnen</label>
+    </fields>
+    <fields>
+        <name>PreviousInstallmentPeriod__c</name>
+        <help>De vorige termijnperiode voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorige termijnperiode</label>
+    </fields>
+    <fields>
+        <name>PreviousPaymentMethod__c</name>
+        <help>De vorige betalingswijze voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorige betalingswijze</label>
+    </fields>
+    <fields>
+        <name>PreviousPlannedInstallments__c</name>
+        <help>Het vorige aantal termijnen (donaties) die u verwacht te ontvangen. Alleen voor terugkerende donaties met een vaste duur.</help>
+        <label>Vorig aantal geplande termijnen</label>
+    </fields>
+    <fields>
+        <name>PreviousRecurringType__c</name>
+        <help>Het vorige type terugkeer voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorig type terugkeer</label>
+    </fields>
+    <fields>
+        <name>PreviousStatusReason__c</name>
+        <help>De vorige statusreden voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorige statusreden</label>
+    </fields>
+    <fields>
+        <name>PreviousStatus__c</name>
+        <help>De vorige status voor de desbetreffende terugkerende donatie.</help>
+        <label>Vorige status</label>
+    </fields>
+    <fields>
+        <name>RecurringDonation__c</name>
+        <help>De terugkerende donatie voor de desbetreffende wijzigingslogboekrecord.</help>
+        <relationshipLabel>Wijzigingslogboek voor terugkerende donatie</relationshipLabel>
+        <label>Terugkerende donatie</label>
+    </fields>
+</CustomObjectTranslation>

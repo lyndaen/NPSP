@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GAU Allocation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GAU Allocations</value>
+    </caseValues>
+    <fieldSets>
+        <label></label>
+        <name>ManageAllocationsAdditionalFields</name>
+    </fieldSets>
+    <layouts>
+        <layout>Allocation Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label></label>
+        <name>Manage_Allocations</name>
+    </webLinks>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Campaign__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <lookupFilter>
+            <errorMessage></errorMessage>
+            <informationalMessage></informationalMessage>
+        </lookupFilter>
+        <name>General_Accounting_Unit__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Payment__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Percent__c</name>
+    </fields>
+    <fields>
+        <help></help>
+        <label></label>
+        <name>Recurring_Donation__c</name>
+        <relationshipLabel></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

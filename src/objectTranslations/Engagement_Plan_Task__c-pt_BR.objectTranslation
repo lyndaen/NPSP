@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Engagement Plan Task Layout</layout>
+        <sections>
+            <label>Links personalizados</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Assunto</nameFieldLabel>
+    <standardFields>
+        <name>Name</name>
+        <label>Assunto</label>
+    </standardFields>
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Tarefa do plano de engajamento</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tarefas do plano de engajamento</value>
+    </caseValues>
+    <fields>
+        <name>Assigned_To__c</name>
+        <help>Procure o Usuário ao qual deseja atribuir a tarefa. Se você deixar este campo em branco, o NPSP atribuirá a tarefa com base no Atribuído padrão do modelo do plano de interação.</help>
+        <label>Designado a</label>
+    </fields>
+    <fields>
+        <name>Comments__c</name>
+        <help>Use-os para inserir informações adicionais sobre a Tarefa.</help>
+        <label>Comentários</label>
+    </fields>
+    <fields>
+        <name>Days_After__c</name>
+        <help>O número de dias após a data de criação do Plano de interação em que a Tarefa será considerada vencida. Para tarefas dependentes, o número de dias após a data de vencimento da Tarefa pai.</help>
+        <label>Dias depois</label>
+    </fields>
+    <fields>
+        <name>Engagement_Plan_Template__c</name>
+        <help>O modelo para esta tarefa de plano de interação.</help>
+        <relationshipLabel>Tarefas de plano de interação</relationshipLabel>
+        <label>Modelo de plano de interação</label>
+    </fields>
+    <fields>
+        <name>Parent_Task__c</name>
+        <help>Indica que esta tarefa do plano de interação depende de uma tarefa pai.</help>
+        <relationshipLabel>Tarefas de plano de interação</relationshipLabel>
+        <label>Tarefa pai</label>
+    </fields>
+    <fields>
+        <name>Priority__c</name>
+        <help>A prioridade desta tarefa.</help>
+        <label>Prioridade</label>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Alto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>Médio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Baixo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Reminder_Time__c</name>
+        <help>O tempo durante o prazo em que aparece um lembrete sobre a data de vencimento.</help>
+        <label>Hora do lembrete</label>
+    </fields>
+    <fields>
+        <name>Reminder__c</name>
+        <help>Define um lembrete para a Tarefa.</help>
+        <label>Lembrete</label>
+    </fields>
+    <fields>
+        <name>Send_Email__c</name>
+        <help>Determina se um email é enviado ao usuário no campo Atribuído a da tarefa quando a tarefa se torna ativa. As Tarefas dependentes ficam ativas quando sua tarefa pai é concluída.</help>
+        <label>Enviar email</label>
+    </fields>
+    <fields>
+        <name>Status__c</name>
+        <help>O status de uma tarefa. As tarefas dependentes são definidas como &quot;Aguardando tarefa pai&quot; até que sua tarefa pai seja concluída.</help>
+        <label>Status</label>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation>Não iniciado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Em andamento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Concluído</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on someone else</masterLabel>
+            <translation>Aguardando outra pessoa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deferred</masterLabel>
+            <translation>Adiado</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Type__c</name>
+        <help>O tipo de tarefa.</help>
+        <label>Tipo</label>
+        <picklistValues>
+            <masterLabel>Call</masterLabel>
+            <translation>Chamada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting</masterLabel>
+            <translation>Reunião</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Outro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>Email</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

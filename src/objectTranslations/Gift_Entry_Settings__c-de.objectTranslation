@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Feminine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <caseType>Nominative</caseType>
+        <value>Spendeneintragseinstellung</value>
+    </caseValues>
+    <caseValues>
+        <plural>false</plural>
+        <caseType>Accusative</caseType>
+        <value>Spendeneintragseinstellung</value>
+    </caseValues>
+    <caseValues>
+        <plural>false</plural>
+        <caseType>Dative</caseType>
+        <value>Spendeneintragseinstellung</value>
+    </caseValues>
+    <caseValues>
+        <plural>false</plural>
+        <caseType>Genitive</caseType>
+        <value>Spendeneintragseinstellung</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <caseType>Nominative</caseType>
+        <value>Spendeneintragseinstellungen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <caseType>Accusative</caseType>
+        <value>Spendeneintragseinstellungen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <caseType>Dative</caseType>
+        <value>Spendeneintragseinstellungen</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <caseType>Genitive</caseType>
+        <value>Spendeneintragseinstellungen</value>
+    </caseValues>
+    <fields>
+        <name>Default_Gift_Entry_Template__c</name>
+        <help>Dies ist eine Ausgangsvorlage, die für den Spendeneintrag zur Eingabe einzelner Spenden oder Batches von Spenden verwendet wird. Dies ist die Standardvorlage für die Eingabe einzelner Spenden.</help>
+        <label>Standardvorlage für Spendeneintrag</label>
+    </fields>
+    <fields>
+        <name>Enable_Gateway_Assignment__c</name>
+        <help>Ermöglicht die Verwendung verschiedener Elevate-Gateways für Elevate-Batches für den Spendeneintrag. Ohne Aktivierung wird immer das Standard-Gateway verwendet.</help>
+        <label>Gateway-Zuweisung aktivieren</label>
+    </fields>
+    <fields>
+        <name>Enable_Gift_Entry__c</name>
+        <help>Aktiviert das Spendeneintrags-Tool. Für dieses Feature ist erweiterte Zuordnung erforderlich.</help>
+        <label>Spendeneintrag aktivieren</label>
+    </fields>
+    <fields>
+        <name>Enable_Recurring_Donations_in_Gift_Entry__c</name>
+        <help>Gibt an, ob wiederkehrende Spenden im Spendeneintrag zur Verfügung stehen.</help>
+        <label>Wiederk. Spenden im Spendeneintr. aktiv.</label>
+    </fields>
+</CustomObjectTranslation>
