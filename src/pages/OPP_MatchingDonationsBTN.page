@@ -1,3 +1,0 @@
-<apex:page standardController="Opportunity">
-    {!$Label.lblDeprecated}
-</apex:page>
