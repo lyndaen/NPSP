@@ -1448,10 +1448,17 @@ flows:
                 task: update_admin_profile
             7: 
                 task: test_data_delete
-            8:
+            8:  
+                flow: enable_rd2 
+            9:
                 flow: ldv_test_data_rd2 
                 options: 
                     generate_and_load_from_yaml__num_records: 50000
+            10: 
+                task: install_managed 
+                options: 
+                    namespace: receipt
+                    version: '1.28'
 
     cascadia-receipting-1.22: 
         steps:
