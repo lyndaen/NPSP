@@ -1454,13 +1454,16 @@ flows:
                 flow: ldv_test_data_rd2 
                 options: 
                     generate_and_load_from_yaml__num_records: 50000
-            10: 
+
+    cascadia-receipting-1.28:
+        steps:
+            1: 
                 task: install_managed 
                 options: 
                     namespace: receipt
                     version: '1.28'
 
-    cascadia-receipting-1.22: 
+    cascadia-receipting-1.31: 
         steps:
             1:
                 task: update_dependencies
@@ -1489,7 +1492,7 @@ flows:
                 task: install_managed 
                 options: 
                     namespace: receipt
-                    version: '1.22'
+                    version: '1.31'
 
 
     beta_dependencies:
