@@ -89,14 +89,6 @@ tasks:
         group: Salesforce Metadata
         options:
             path: unpackaged/config/dev
-    
-    deploy_cascadia_config:
-        description: Deploys configuration of the Cascadia Receipting App
-        class_path: cumulusci.tasks.salesforce.Deploy
-        group: Salesforce Metadata 
-        options:
-            path: unpackaged/config/cascadia
-            namespace_inject: $project_config.project__package__namespace
 
     deploy_trial_config:
         description: Deploys the post-install configuration for a trial/new org.
@@ -232,7 +224,7 @@ tasks:
     github_release:
         options:
             release_content: |
-                Check out the Salesforce Release Notes on [Salesforce Help & Training](https://sfdc.co/bnL4Cb).
+                Check out the [Salesforce Release Notes](https://sfdc.co/bnL4Cb) or [Known Issues](https://issues.salesforce.com/) for details.
 
     github_release_notes:
         options:
@@ -376,7 +368,6 @@ tasks:
             objects:
                 - Opportunity
                 - Case
-                - Entitlement
                 - npe03__Recurring_Donation__c
                 - npe5__Affiliation__c
                 - Contact
@@ -390,7 +381,6 @@ tasks:
                 - Level__c
                 - Engagement_Plan__c
                 - Error__c
-                
 
     purge_npsp_errors:
         description: 'Deletes all NPSP Error__c records'
@@ -819,7 +809,7 @@ flows:
             4:
                 task: update_dependencies
                 options:
-                    include_beta: False
+                    include_beta: True
                     security_type: PUSH
             5:
                 task: install_managed_beta
@@ -838,10 +828,11 @@ flows:
                 task: deploy_dev_config
             5:
                 task: npsp_default_settings
+
     config_qa:
         steps:
             2:
-                task: test_data_delete
+                task: None
             3:
                 task: deploy_dev_config_delete
             4:
@@ -1427,73 +1418,6 @@ flows:
                 ## ensure that the RecurringDonation.DayOfMonth picklist field has the proper active values.
             3:
                 task: test_rd_batch_performance
-    cascadia: 
-        steps:
-            1:
-                task: update_dependencies
-            2:
-                task: deploy
-                options:
-                    path: unpackaged/pre/account_record_types
-            3:
-                task: ensure_record_type
-            4: 
-                task: install_managed
-                options: 
-                    namespace: npsp
-                    version: '3.226'
-            5: 
-                task: deploy_trial_config
-            6:
-                task: update_admin_profile
-            7: 
-                task: test_data_delete
-            8:  
-                flow: enable_rd2 
-            9:
-                flow: ldv_test_data_rd2 
-                options: 
-                    generate_and_load_from_yaml__num_records: 50000
-
-    cascadia-receipting-1.28:
-        steps:
-            1: 
-                task: install_managed 
-                options: 
-                    namespace: receipt
-                    version: '1.28'
-
-    cascadia-receipting-1.31: 
-        steps:
-            1:
-                task: update_dependencies
-            2:
-                task: deploy
-                options:
-                    path: unpackaged/pre/account_record_types
-            3:
-                task: ensure_record_type
-            4: 
-                task: install_managed
-                options: 
-                    namespace: npsp
-                    version: '3.226'
-            5: 
-                task: deploy_trial_config
-            6:
-                task: update_admin_profile
-            7: 
-                task: test_data_delete
-            8:
-                flow: ldv_test_data_rd2 
-                options: 
-                    generate_and_load_from_yaml__num_records: 50000
-            9: 
-                task: install_managed 
-                options: 
-                    namespace: receipt
-                    version: '1.31'
-
 
     beta_dependencies:
         steps:
@@ -1560,6 +1484,11 @@ flows:
             15:
                 task: unschedule_apex
                 ## Delete all scheduled NPSP jobs ... just in case.
+            16:
+                task: set_duplicate_rule_status
+                options:
+                    api_names: Account.Standard_Account_Duplicate_Rule, Contact.Standard_Contact_Duplicate_Rule
+                    active: false
             20:
                 task: generate_and_load_from_yaml
                 ## The actual data-loading task.
